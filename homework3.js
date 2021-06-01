@@ -41,7 +41,16 @@ if (count0 > 0){
 // Insert a digit and a number. Check whether the digits contains in the
 // number or not.
 
-let digit = +prompt("Enter a digit");
-let number  = prompt("Enter a number");
+let digit =+ prompt("Enter a digit");
+let number =+ prompt("Enter a number");
+do{
+    number = (number - number % 10 )/10;
+}while(number === Number);
+if(digit === number % 10 ){
+    console.log ("Yes");  
+}else{
+    console.log("No");
+}
+
   
 
