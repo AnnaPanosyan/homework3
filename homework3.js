@@ -52,5 +52,20 @@ if(digit === number % 10 ){
     console.log("No");
 }
 
+// task5
+// Insert a number. Print ‘yes’ if the number is prime, ‘no’ otherwise.
+
+let number = +prompt("Enter a number");
+let count = 0;
+for(let i = 2; i < number/2; i++){
+	if( number % i === 0){
+    count += 1;
+    }
+}
+if(count > 0){
+	console.log("No")
+}else{
+	console.log("Yes")
+}
   
 
