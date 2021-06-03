@@ -18,7 +18,6 @@ switch (true){
 
 let length = 3;
 let countNegative = 0;
-let countPositive = 0;
 let count0 = 0;
 for( let i = 0; i < length; i++){
     let num = +prompt("Enter a number");
@@ -26,8 +25,6 @@ for( let i = 0; i < length; i++){
          count0 += 1;
     }else if(num < 0){
         countNegative += 1;
-    }else if(num > 0){
-        countPositive += 1;
     }
 }
 if (count0 > 0){
