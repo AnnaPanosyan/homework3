@@ -40,13 +40,42 @@ if (count0 > 0){
 
 let digit =+ prompt("Enter a digit");
 let number =+ prompt("Enter a number");
-do{
-    number = (number - number % 10 )/10;
-}while(number === Number);
-if(digit === number % 10 ){
-    console.log ("Yes");  
+let numberDigit;
+while(number > 0 ){
+	if( number % 10 === digit ){
+		numberDigit = number % 10;
+		break;
+	}
+		number = (number - number % 10 )/10; 
+  }
+if(numberDigit >= 0 ){
+	console.log ("Yes");  
 }else{
-    console.log("No");
+	console.log("No");
+}
+
+// task4
+// Enter a number. Find the difference between its biggest and smallest
+// digits.
+
+let number =+prompt ("Enter a number"); 
+if (number < 10){
+    console.log("0")
+}else{
+    let numberDigit;
+    let max = 0;
+    let min = 9;
+    while(number > 0 ){
+        numberDigit = number % 10;
+        if (numberDigit > max){
+	        max = numberDigit;
+		}else if(numberDigit < min){
+            min = numberDigit
+        }
+	number = (number - number % 10 )/10; 
+  }
+let diff = max - min;
+    console.log(diff);
 }
 
 // task5
