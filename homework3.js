@@ -29,7 +29,7 @@ for( let i = 0; i < length; i++){
 }
 if (count0 > 0){
     console.log(" unsinged ");
-} else if(countNegative % 2 === 1 || countNegative === length){
+} else if(countNegative % 2 === 1){
     console.log(" - ");
 }else{
     console.log(" + ");
@@ -41,7 +41,7 @@ if (count0 > 0){
 let digit =+ prompt("Enter a digit");
 let number =+ prompt("Enter a number");
 let numberDigit;
-while(number > 0 ){
+while(number >= 0 ){
 	if( number % 10 === digit ){
 		numberDigit = number % 10;
 		break;
